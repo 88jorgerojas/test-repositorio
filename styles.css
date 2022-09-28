@@ -1,1 +1,47 @@
+body{
+    font-family: sans-serif;  
+    margin: 0;
 
+}
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;    
+}
+header{
+    display: flex;
+    background-image: linear-gradient(to right, #1d1db1e6, #35e06e,rgb(0, 47, 128));
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; 
+    /* significa que se va a dar un relleno  como para que tenga distancia entre los bordes pero solo en la direccion que le demos  */
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo:hover{
+    color: aqua;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    border-radius: 56px;
+}
+nav a{
+    font-weight: 600;
+    padding-right: 11px;
+}
+nav a:hover{
+    color: aqua;
+}
+/* con este puedo darle condicionar a css, para que tenga un tamaño maximo para las pantallas de un celular, no se distorcionen las medidas de la pantalla */
+@media(max-width:680px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
